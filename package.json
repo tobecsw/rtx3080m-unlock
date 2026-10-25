@@ -1,0 +1,28 @@
+{
+  "name": "rtx30-unlock",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun tools/build.ts",
+    "build:zip": "bun tools/build-zip.ts",
+    "build:firmware-exe": "bun build --compile --target=bun-windows-x64 tools/firmware/exe.ts --outfile build/firmware-assets.exe",
+    "test": "bun tools/test.ts",
+    "firmware:assets": "bun tools/firmware/build_assets.ts build/firmware-assets",
+    "format": "bun run format:c && bun run format:ts",
+    "format:c:check": "bun tools/format.ts --check",
+    "format:c": "bun tools/format.ts",
+    "format:ts": "oxfmt ./tools",
+    "typecheck": "bun check ./tools"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.3",
+    "oxfmt": "^0.74.0"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "adm-zip": "^0.6.1",
+    "xz-compat": "^1.2.11"
+  }
+}
