@@ -1,0 +1,14 @@
+#define EIO 5
+#define ENOMEM 12
+#define EBUSY 16
+#define ENODEV 19
+#define EINVAL 22
+#define ERANGE 34
+#define EAGAIN 11
+#define EPROTO 71
+#define EBADMSG 74
+#define EOPNOTSUPP 95
+#define ETIMEDOUT 110
+#define EOVERFLOW 75
+#define ENOENT 2
+#define EALREADY 114

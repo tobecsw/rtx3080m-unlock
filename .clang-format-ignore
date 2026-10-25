@@ -1,0 +1,8 @@
+# Third-party code and the immutable regression snapshot.
+deps/**
+src/unlock/vendor/**
+src/unlock/tests/reference/**
+# Local dependencies and generated outputs.
+node_modules/**
+build/**
+unlock/build/**

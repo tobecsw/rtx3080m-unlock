@@ -1,0 +1,8 @@
+PyTorch: 2.8.0+cu128 CUDA: 12.8
+torch.float16 seed 1 max_abs_error 0.0004904270172119141 PASS
+torch.float16 seed 2 max_abs_error 0.0004909038543701172 PASS
+torch.float16 seed 3 max_abs_error 0.0004897117614746094 PASS
+torch.bfloat16 seed 1 max_abs_error 0.0039042234420776367 PASS
+torch.bfloat16 seed 2 max_abs_error 0.0039049386978149414 PASS
+torch.bfloat16 seed 3 max_abs_error 0.003905177116394043 PASS
+6 numerical spot checks passed; this does not establish long-term stability.

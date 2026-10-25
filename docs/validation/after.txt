@@ -1,0 +1,13 @@
+GPU: NVIDIA GeForce RTX 3080 Laptop GPU
+GEMM 8192x8192, median of 20 iters
+
+FP32 (no tensor)      14.82 TFLOPS   (  74.19 ms)
+TF32 (tensor)         22.74 TFLOPS   (  48.35 ms)
+FP16 (tensor)         74.65 TFLOPS   (  14.73 ms)
+BF16 (tensor)         73.03 TFLOPS   (  15.06 ms)
+
+Relative to FP32:
+FP32 (no tensor)     1.00x
+TF32 (tensor)        1.53x
+FP16 (tensor)        5.04x
+BF16 (tensor)        4.93x
